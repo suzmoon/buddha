@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buddha Greeting Card</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_VALID_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+  <div class="card">
+    <h1 id="greeting">Happy Buddha Day!</h1>
+    <button id="fontButton">Change Font Style</button>
+    <div class="slider">
+      <img src="bu.jpg" alt="Buddha Image 1" class="slide">
+      <img src="1158962.jpg" alt="Buddha Image 2" class="slide">
+      <img src="th.jpg" alt="Buddha Image 3" class="slide">
+    </div>
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+    <div class="quote-container">
+      <p id="quote"></p>
+      <button id="newQuote">New Quote</button>
+    </div>
+    <div class="audio-controls">
+      <audio controls>
+        <source src="Untitled video - Made with Clipchamp.mp4" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="countdown">
+      <p>Days until next Buddha Day:</p>
+      <p id="timer"></p>
+    </div>
+    <div class="weather-widget">
+      <p>Current Weather:</p>
+      <div id="weather"></div>
+    </div>
+    <div class="map-container">
+      <p>Important Buddhist Locations:</p>
+      <div id="map"></div>
+    </div>
+    <div class="modal" id="infoModal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <p> Buddha dedicated his life to seeking the path to true happiness and freedom from suffering. 
+            Through meditation and introspection, he discovered the Four Noble Truths, which reveal the nature of suffering and the path to liberation. 
+            His teachings, known as the Dharma, emphasize compassion, mindfulness, and the pursuit of enlightenment through the Eightfold Path. 
+            Buddha's message of peace, understanding, and inner peace continues to inspire millions worldwide, making Vesak a day of reflection, gratitude, 
+            and celebration for Buddhists and anyone seeking a more mindful and compassionate way of life..</p>
+      </div>
+    </div>
+    <button id="infoButton">More Info</button>
+    <div class="scroll-container">
+      <p>Scroll to see more...</p>
+      <div class="scroll-content">
+        <p>The Buddha didn't keep his newfound knowledge to himself.
+             He spent the remaining years of his life sharing his insights with the world. He taught the Four Noble Truths, 
+             revealing the fundamental truths about suffering, its cause, the possibility of ending it, and the path to liberation. 
+             This path, known as the Eightfold Path, outlines a framework for ethical living, mindfulness, and mental development.
+              It emphasizes practices like right view, right speech, right action, and right livelihood, 
+              all leading to a life of inner peace and freedom from suffering.
+
+            Buddha's message of compassion, non-violence, and mindfulness resonates across cultures and generations.
+            His teachings offer a practical guide for navigating life's challenges and cultivating a sense of inner peace. 
+            Today, on Buddha's Birthday, we celebrate his life and legacy. We reflect on his profound teachings and their potential to transform our lives. 
+            May this occasion inspire us to embrace compassion, practice mindfulness, and walk the path towards a more peaceful and fulfilling existence.</p>
+      </div>
+    </div>
+    <div class="font-size-slider">
+      <p>Adjust Font Size:</p>
+      <input type="range" id="fontSizeSlider" min="10" max="30" value="16">
+    </div>
+    <button id="toggleMode">Toggle Day/Night Mode</button>
+    <div class="canvas-container">
+      <canvas id="myCanvas" width="400" height="400"></canvas>
+    </div>
+    <div class="game-container">
+      <p>Simple Game: Catch the Falling Objects</p>
+      <div id="game"></div>
+    </div>
+    <div class="form-container">
+      <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="drag-container">
+      <p>Drag these items</p>
+      <div class="draggable" draggable="true" id="drag1">Item 1</div>
+      <div class="draggable" draggable="true" id="drag2">Item 2</div>
+      <div class="dropzone" id="dropzone">Drop Here</div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
